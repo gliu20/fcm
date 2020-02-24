@@ -1,2 +1,0 @@
-# fcm
-AT Entrepreneurship project
