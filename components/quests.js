@@ -1,15 +1,12 @@
 import React from 'react';
 import { Image, ImageBackground, StyleSheet, Text, View, Button } from 'react-native';
 
-class Dashboard extends React.Component {
+class TodayQuest extends React.Component {
 
     render() {
         return (
             <ImageBackground resizeMode={'cover'} source={require('../assets/back.jpg')} style={styles.container}>
-                <Button style={styles.button} title="Badges"></Button>
-                <Button style={styles.button} title="Shop"></Button>
-                <Button style={styles.button} title="Extra Practice"></Button>
-                <Button style={styles.button} title="Feedback"></Button>
+                <Button style={{padding: '20'}} title="Today's Quest"></Button>
             </ImageBackground >
         );
     }
@@ -23,9 +20,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-    button: {
-        padding: '20'
-    }
 });
 
-export default Dashboard;
+export default TodayQuest;
