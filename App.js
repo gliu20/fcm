@@ -6,7 +6,7 @@ import StoryScreen from './screens/storyscreen'
 
 const story = [
     { key: "1", storyImage: require('./assets/back.jpg'), storyText: "One day there was a" },
-    { key: "2", storyImage: require('./assets/back.jpg'), storyText: "the next day" },
+    { key: "2", storyImage: {uri: 'https://facebook.github.io/react/logo-og.png'}, storyText: "the next day" },
     { key: "3", storyImage: require('./assets/back.jpg'), storyText: "blah blah" },
     { key: "4", storyImage: require('./assets/back.jpg'), storyText: "and something something" },
     { key: "5", storyImage: require('./assets/back.jpg'), storyText: "slide 5" },
@@ -16,6 +16,8 @@ const story = [
 export default function App() {
     return (
         <View style={styles.container}>
+            <HomeScreen></HomeScreen>
+            <BadgeScreen></BadgeScreen>
             <StoryScreen story={story}></StoryScreen>
         </View>
     );
