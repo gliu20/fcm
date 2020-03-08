@@ -5,12 +5,12 @@ class Dashboard extends React.Component {
 
     render() {
         return (
-            <ImageBackground resizeMode={'cover'} source={require('../assets/back.jpg')} style={styles.container}>
+            <View style={styles.container}>
                 <Button style={styles.button} title="Badges"></Button>
                 <Button style={styles.button} title="Shop"></Button>
                 <Button style={styles.button} title="Extra Practice"></Button>
                 <Button style={styles.button} title="Feedback"></Button>
-            </ImageBackground >
+            </View>
         );
     }
 }
