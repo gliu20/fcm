@@ -18,6 +18,7 @@ class HomeScreen extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
+    marginTop: 20,// temp fix for status bar
     flex: 1,
     backgroundColor: '#29f',
     alignItems: 'center',
