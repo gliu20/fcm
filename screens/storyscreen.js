@@ -4,11 +4,13 @@ import Story from './../components/story';
 
 class StoryScreen extends React.Component {
   render () {
-    <View style={styles.container}>
-        <Story story="One day there was a"></Story>
-        <Story story="the next day"></Story>
-        <Story story="blah blah"></Story>
-    </View>
+    return (
+        <View style={styles.container}>
+            <Story story="One day there was a"></Story>
+            <Story story="the next day"></Story>
+            <Story story="blah blah"></Story>
+        </View>
+    );
   }
 }
 
