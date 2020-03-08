@@ -17,7 +17,6 @@ class BadgeScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#29f',
     alignItems: 'center',
     justifyContent: 'center',
   },

@@ -16,7 +16,9 @@ class Story extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        width: deviceWidth
+        width: deviceWidth,
+        alignItems:"center",
+        justifyContent:"center"
     },
 });
 

@@ -9,54 +9,9 @@ class StoryScreen extends React.Component {
             <Story story="One day there was a"></Story>
             <Story story="the next day"></Story>
             <Story story="blah blah"></Story>
-            <Story story="One day there was a"></Story>
-            <Story story="the next day"></Story>
-            <Story story="blah blah"></Story>
-            <Story story="One day there was a"></Story>
-            <Story story="the next day"></Story>
-            <Story story="blah blah"></Story>
-            <Story story="One day there was a"></Story>
-            <Story story="the next day"></Story>
-            <Story story="blah blah"></Story>
-            <Story story="One day there was a"></Story>
-            <Story story="the next day"></Story>
-            <Story story="blah blah"></Story>
-            <Story story="One day there was a"></Story>
-            <Story story="the next day"></Story>
-            <Story story="blah blah"></Story>
-            <Story story="One day there was a"></Story>
-            <Story story="the next day"></Story>
-            <Story story="blah blah"></Story>
-            <Story story="One day there was a"></Story>
-            <Story story="the next day"></Story>
-            <Story story="blah blah"></Story>
-            <Story story="One day there was a"></Story>
-            <Story story="the next day"></Story>
-            <Story story="blah blah"></Story>
-            <Story story="One day there was a"></Story>
-            <Story story="the next day"></Story>
-            <Story story="blah blah"></Story>
-            <Story story="One day there was a"></Story>
-            <Story story="the next day"></Story>
-            <Story story="blah blah"></Story>
-            <Story story="One day there was a"></Story>
-            <Story story="the next day"></Story>
-            <Story story="blah blah"></Story>
-            <Story story="One day there was a"></Story>
-            <Story story="the next day"></Story>
-            <Story story="blah blah"></Story>
-            <Story story="One day there was a"></Story>
-            <Story story="the next day"></Story>
-            <Story story="blah blah"></Story>
-            <Story story="One day there was a"></Story>
-            <Story story="the next day"></Story>
-            <Story story="blah blah"></Story>
-            <Story story="One day there was a"></Story>
-            <Story story="the next day"></Story>
-            <Story story="blah blah"></Story>
-            <Story story="One day there was a"></Story>
-            <Story story="the next day"></Story>
-            <Story story="blah blah"></Story>
+            <Story story="and something something"></Story>
+            <Story story="slide 5"></Story>
+            <Story story="slide 6"></Story>
         </ScrollView>
     );
   }
@@ -64,8 +19,7 @@ class StoryScreen extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: "row",
-    backgroundColor: '#29f'
+    flexDirection: "row"
   },
 });
 
