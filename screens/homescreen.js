@@ -6,11 +6,13 @@ import TodayQuest from './../components/quests';
 
 class HomeScreen extends React.Component {
   render () {
-    <View style={styles.container}>
-      <Streak streak="2"></Streak>
-      <Dashboard></Dashboard>
-      <TodayQuest quest="Do 20 Jumping Jacks!"></TodayQuest>
-    </View>
+    return (
+        <View style={styles.container}>
+            <Streak streak="2"></Streak>
+            <Dashboard></Dashboard>
+            <TodayQuest quest="Do 20 Jumping Jacks!"></TodayQuest>
+        </View>
+    );
   }
 }
 
