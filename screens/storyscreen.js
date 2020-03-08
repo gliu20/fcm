@@ -1,25 +1,71 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import Story from './../components/story';
 
 class StoryScreen extends React.Component {
   render () {
     return (
-        <View style={styles.container}>
+        <ScrollView horizontal={true} pagingEnabled={true} style={styles.container}>
             <Story story="One day there was a"></Story>
             <Story story="the next day"></Story>
             <Story story="blah blah"></Story>
-        </View>
+            <Story story="One day there was a"></Story>
+            <Story story="the next day"></Story>
+            <Story story="blah blah"></Story>
+            <Story story="One day there was a"></Story>
+            <Story story="the next day"></Story>
+            <Story story="blah blah"></Story>
+            <Story story="One day there was a"></Story>
+            <Story story="the next day"></Story>
+            <Story story="blah blah"></Story>
+            <Story story="One day there was a"></Story>
+            <Story story="the next day"></Story>
+            <Story story="blah blah"></Story>
+            <Story story="One day there was a"></Story>
+            <Story story="the next day"></Story>
+            <Story story="blah blah"></Story>
+            <Story story="One day there was a"></Story>
+            <Story story="the next day"></Story>
+            <Story story="blah blah"></Story>
+            <Story story="One day there was a"></Story>
+            <Story story="the next day"></Story>
+            <Story story="blah blah"></Story>
+            <Story story="One day there was a"></Story>
+            <Story story="the next day"></Story>
+            <Story story="blah blah"></Story>
+            <Story story="One day there was a"></Story>
+            <Story story="the next day"></Story>
+            <Story story="blah blah"></Story>
+            <Story story="One day there was a"></Story>
+            <Story story="the next day"></Story>
+            <Story story="blah blah"></Story>
+            <Story story="One day there was a"></Story>
+            <Story story="the next day"></Story>
+            <Story story="blah blah"></Story>
+            <Story story="One day there was a"></Story>
+            <Story story="the next day"></Story>
+            <Story story="blah blah"></Story>
+            <Story story="One day there was a"></Story>
+            <Story story="the next day"></Story>
+            <Story story="blah blah"></Story>
+            <Story story="One day there was a"></Story>
+            <Story story="the next day"></Story>
+            <Story story="blah blah"></Story>
+            <Story story="One day there was a"></Story>
+            <Story story="the next day"></Story>
+            <Story story="blah blah"></Story>
+            <Story story="One day there was a"></Story>
+            <Story story="the next day"></Story>
+            <Story story="blah blah"></Story>
+        </ScrollView>
     );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#29f',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: "row",
+    backgroundColor: '#29f'
   },
 });
 
