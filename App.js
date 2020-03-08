@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 import HomeScreen from './screens/homescreen';
 import BadgeScreen from './screens/badgescreen';
 import StoryScreen from './screens/storyscreen'
@@ -21,13 +21,28 @@ const badge = [
     { key:"5", badgeText: "30 day streak" },
 ];
 
+
 class App extends React.Component {
+    state = {currScreen: "home"};
+
+    changeView (view) {
+        if (view !== "home" && view !== "badges" && view !== "story") {
+            throw new Error("Invalid view type. View must be either home, badges, or story")
+        }
+
+        this.setState(() => ({currScreen: view}))
+    }
+
     render () {
         return (
             <View style={styles.container}>
-                <HomeScreen></HomeScreen>
-                <BadgeScreen badges={badge}></BadgeScreen>
-                <StoryScreen story={story}></StoryScreen>
+                <Button title="Go Home" 
+                    onPress={() => {
+                        this.changeView("home")
+                    }}></Button>
+                <HomeScreen switchView={this.changeView.bind(this)} hidden={this.state.currScreen !== "home"}></HomeScreen>
+                <BadgeScreen switchView={this.changeView.bind(this)} hidden={this.state.currScreen !== "badges"} badges={badge}></BadgeScreen>
+                <StoryScreen switchView={this.changeView.bind(this)} hidden={this.state.currScreen !== "story"} story={story}></StoryScreen>
             </View>
         );
     }
