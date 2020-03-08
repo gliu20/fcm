@@ -1,25 +1,24 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, FlatList } from 'react-native';
 import Badge from './../components/badge';
 
 class BadgeScreen extends React.Component {
-  render () {
-    return (
-      <View style={styles.container}>
-          <Badge badge="First steps"></Badge>
-          <Badge badge="Reached 100 pts"></Badge>
-          <Badge badge="Five day streak"></Badge>
-      </View>
-    );
-  }
+    render() {
+        return (
+            <FlatList
+                data={this.props.badges}
+                style={styles.container}
+                renderItem={({ item }) => <Badge badge={item.badgeText}></Badge>}
+            >
+            </FlatList>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    container: {
+        flex: 1
+    }
 });
 
 export default BadgeScreen;
