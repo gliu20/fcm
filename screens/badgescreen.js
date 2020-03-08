@@ -4,11 +4,13 @@ import Badge from './../components/badge';
 
 class BadgeScreen extends React.Component {
   render () {
-    <View style={styles.container}>
-        <Badge badge="First steps"></Badge>
-        <Badge badge="Reached 100 pts"></Badge>
-        <Badge badge="Five day streak"></Badge>
-    </View>
+    return (
+      <View style={styles.container}>
+          <Badge badge="First steps"></Badge>
+          <Badge badge="Reached 100 pts"></Badge>
+          <Badge badge="Five day streak"></Badge>
+      </View>
+    );
   }
 }
 

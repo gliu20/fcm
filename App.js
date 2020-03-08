@@ -6,7 +6,7 @@ import BadgeScreen from './screens/badgescreen'
 export default function App() {
   return (
     <View style={styles.container}>
-      <HomeScreen></HomeScreen>
+      <BadgeScreen></BadgeScreen>
     </View>
   );
 }
