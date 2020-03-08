@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Story from './components/story';
+import Story from './../components/story';
 
 class StoryScreen extends React.Component {
   render () {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Badge from './components/badge';
+import Badge from './../components/badge';
 
 class BadgeScreen extends React.Component {
   render () {
