@@ -4,7 +4,7 @@ import HomeScreen from './screens/homescreen';
 import BadgeScreen from './screens/badgescreen';
 import StoryScreen from './screens/storyscreen'
 
-const streak = 2;
+const streak = 2;// TODO add props to move data down
 
 const story = [
     { key: "1", storyImage: require('./assets/back.jpg'), storyText: "One day there was a" },
