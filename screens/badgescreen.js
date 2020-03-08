@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Badge from './components/badge';
 
-class HomeScreen extends React.Component {
+class BadgeScreen extends React.Component {
   render () {
     <View style={styles.container}>
         <Badge badge="First steps"></Badge>
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen;
+export default BadgeScreen;
