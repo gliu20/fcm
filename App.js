@@ -1,15 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Streak from './components/streaks';
-import Dashboard from './components/dashboard';
-import TodayQuest from './components/quests';
+import HomeScreen from './components/homescreen.js';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Streak streak="2"></Streak>
-      <Dashboard></Dashboard>
-      <TodayQuest quest="Do 20 Jumping Jacks!"></TodayQuest>
+      <HomeScreen></HomeScreen>
     </View>
   );
 }
