@@ -5,9 +5,9 @@ class TodayQuest extends React.Component {
 
     render() {
         return (
-            <ImageBackground resizeMode={'cover'} source={require('../assets/back.jpg')} style={styles.container}>
-                <Button style={{padding: '20'}} title="Today's Quest"></Button>
-            </ImageBackground >
+            <View style={styles.container}>
+                <Button style={{padding: '20'}} title={this.props.quest}></Button>
+            </View>
         );
     }
 }
