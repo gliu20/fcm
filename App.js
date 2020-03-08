@@ -4,6 +4,8 @@ import HomeScreen from './screens/homescreen';
 import BadgeScreen from './screens/badgescreen';
 import StoryScreen from './screens/storyscreen'
 
+const streak = 2;
+
 const story = [
     { key: "1", storyImage: require('./assets/back.jpg'), storyText: "One day there was a" },
     { key: "2", storyImage: {uri: 'https://facebook.github.io/react/logo-og.png'}, storyText: "the next day" },
@@ -39,7 +41,9 @@ class App extends React.Component {
                 <Button title="Go Home" 
                     onPress={() => {
                         this.changeView("home")
-                    }}></Button>
+                    }}
+                    style={styles.homeBtn}
+                    ></Button>
                 <HomeScreen switchView={this.changeView.bind(this)} hidden={this.state.currScreen !== "home"}></HomeScreen>
                 <BadgeScreen switchView={this.changeView.bind(this)} hidden={this.state.currScreen !== "badges"} badges={badge}></BadgeScreen>
                 <StoryScreen switchView={this.changeView.bind(this)} hidden={this.state.currScreen !== "story"} story={story}></StoryScreen>
@@ -53,8 +57,9 @@ export default App;
 const styles = StyleSheet.create({
     container: {
         marginTop: 25,
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
+        flex: 1
     },
+    homeBtn: {
+        width: "100%"
+    }
 });

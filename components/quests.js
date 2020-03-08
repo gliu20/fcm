@@ -6,7 +6,12 @@ class TodayQuest extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Button style={{padding: '20'}} title={this.props.quest}></Button>
+                <Button
+                    onPress={() => {
+                        this.props.switchView("story")
+                    }}  
+                    style={{padding: '20'}} 
+                    title={this.props.quest}></Button>
             </View>
         );
     }

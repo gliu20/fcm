@@ -6,14 +6,22 @@ class Dashboard extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Button style={styles.button} title="Badges"></Button>
-                <Button style={styles.button} title="Shop"></Button>
-                <Button style={styles.button} title="Extra Practice"></Button>
-                <Button style={styles.button} title="Feedback"></Button>
+                <Button style={styles.button} 
+                    onPress={() => {
+                       this.props.switchView("badges")
+                    }} title="Badges"></Button>
             </View>
         );
     }
 }
+
+/*
+Un-implemented features:
+                <Button style={styles.button} title="Shop"></Button>
+                <Button style={styles.button} title="Extra Practice"></Button>
+                <Button style={styles.button} title="Feedback"></Button>
+
+*/
 
 const styles = StyleSheet.create({
     container: {

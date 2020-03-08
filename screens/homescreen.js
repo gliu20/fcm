@@ -13,8 +13,8 @@ class HomeScreen extends React.Component {
     return (
         <ImageBackground resizeMode={'stretch'} source={require('../assets/back.jpg')} style={styles.container}>
             <Streak streak="2"></Streak>
-            <Dashboard></Dashboard>
-            <TodayQuest quest="Do 20 Jumping Jacks!"></TodayQuest>
+            <Dashboard switchView={this.props.switchView}></Dashboard>
+            <TodayQuest switchView={this.props.switchView} quest="Do 20 Jumping Jacks!"></TodayQuest>
         </ImageBackground>
     );
   }
