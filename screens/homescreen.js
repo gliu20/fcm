@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Streak from './components/streaks';
-import Dashboard from './components/dashboard';
-import TodayQuest from './components/quests';
+import Streak from './../components/streaks';
+import Dashboard from './../components/dashboard';
+import TodayQuest from './../components/quests';
 
 class HomeScreen extends React.Component {
   render () {
