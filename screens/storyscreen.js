@@ -6,12 +6,12 @@ class StoryScreen extends React.Component {
   render () {
     return (
         <ScrollView horizontal={true} pagingEnabled={true} style={styles.container}>
-            <Story story="One day there was a"></Story>
-            <Story story="the next day"></Story>
-            <Story story="blah blah"></Story>
-            <Story story="and something something"></Story>
-            <Story story="slide 5"></Story>
-            <Story story="slide 6"></Story>
+            <Story storyImage={require('../assets/back.jpg')} storyText="One day there was a"></Story>
+            <Story storyImage={require('../assets/back.jpg')} storyText="the next day"></Story>
+            <Story storyImage={require('../assets/back.jpg')} storyText="blah blah"></Story>
+            <Story storyImage={require('../assets/back.jpg')} storyText="and something something"></Story>
+            <Story storyImage={require('../assets/back.jpg')} storyText="slide 5"></Story>
+            <Story storyImage={require('../assets/splash.png')} storyText="slide 6"></Story>
         </ScrollView>
     );
   }

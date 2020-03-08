@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Dimensions, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, ScrollView, ImageBackground } from 'react-native';
 
 const deviceWidth = Dimensions.get('window').width;
 
@@ -7,9 +7,9 @@ class Story extends React.Component {
 
     render() {
         return (
-            <View style={styles.container}>
-                <Text>Story: {this.props.story}</Text>
-            </View>
+            <ImageBackground resizeMode={'stretch'} source={this.props.storyImage} style={styles.container}>
+                <Text>Story: {this.props.storyText}</Text>
+            </ImageBackground>
         );
     }
 }
