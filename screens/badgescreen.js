@@ -4,6 +4,10 @@ import Badge from './../components/badge';
 
 class BadgeScreen extends React.Component {
     render() {
+        if (this.props.hidden) {
+            return null;
+        }
+
         return (
             <FlatList
                 data={this.props.badges}

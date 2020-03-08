@@ -13,7 +13,7 @@ const story = [
     { key: "6", storyImage: require('./assets/splash.png'), storyText: "slide 6" }
 ];
 
-const badge =[
+const badge = [
     { key:"1", badgeText: "Run around a lot" },
     { key:"2", badgeText: "Won 2 times" },
     { key:"3", badgeText: "5 day streak" },
@@ -21,15 +21,19 @@ const badge =[
     { key:"5", badgeText: "30 day streak" },
 ];
 
-export default function App() {
-    return (
-        <View style={styles.container}>
-            <HomeScreen></HomeScreen>
-            <BadgeScreen badges={badge}></BadgeScreen>
-            <StoryScreen story={story}></StoryScreen>
-        </View>
-    );
+class App extends React.Component {
+    render () {
+        return (
+            <View style={styles.container}>
+                <HomeScreen></HomeScreen>
+                <BadgeScreen badges={badge}></BadgeScreen>
+                <StoryScreen story={story}></StoryScreen>
+            </View>
+        );
+    }
 }
+
+export default App;
 
 const styles = StyleSheet.create({
     container: {

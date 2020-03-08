@@ -6,6 +6,10 @@ import TodayQuest from './../components/quests';
 
 class HomeScreen extends React.Component {
   render () {
+    if (this.props.hidden) {
+      return null;
+    }
+    
     return (
         <ImageBackground resizeMode={'stretch'} source={require('../assets/back.jpg')} style={styles.container}>
             <Streak streak="2"></Streak>
